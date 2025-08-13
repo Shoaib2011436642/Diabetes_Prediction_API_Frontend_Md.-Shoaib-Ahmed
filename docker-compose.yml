@@ -1,0 +1,10 @@
+services:
+  fastapi:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - MODEL_PATH=/app/model/diabetes_model.pkl
+

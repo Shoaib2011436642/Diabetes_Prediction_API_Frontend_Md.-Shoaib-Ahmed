@@ -32,7 +32,7 @@ if st.button("Predict"):
     }
     
     # Send POST request to the FastAPI backend
-    response = requests.post("http://your_render_backend_url/predict", json=data)
+    response = requests.post("https://diabetes-prediction-api-frontend-md.onrender.com/docs#/default/predict_predict_post", json=data)
     prediction = response.json()
 
     # Display results

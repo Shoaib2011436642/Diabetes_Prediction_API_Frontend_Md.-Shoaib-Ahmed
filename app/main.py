@@ -48,9 +48,9 @@ async def predict(patient: PatientData):
 async def metrics():
     # Return a sample of classification metrics from the test set
     return {
-        "accuracy": 0.85,
-        "precision": 0.82,
-        "recall": 0.84,
-        "f1_score": 0.83,
-        "roc_auc": 0.88
+        "accuracy": 0.77,
+        "precision": 0.67,
+        "recall": 0.67,
+        "f1_score": 0.67,
+        "roc_auc": 0.75
     }

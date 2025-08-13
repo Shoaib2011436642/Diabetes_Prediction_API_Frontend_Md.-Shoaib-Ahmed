@@ -30,11 +30,23 @@ if st.button("Predict"):
         "DiabetesPedigreeFunction": diabetes_pedigree_function,
         "Age": age
     }
-    
-    # Send POST request to the FastAPI backend
-    response = requests.post("https://diabetes-prediction-api-frontend-md.onrender.com/docs/predict", json=data)
-    prediction = response.json()
 
-    # Display results
-    st.write(f"Prediction: {prediction['result']}")
-    st.write(f"Confidence: {prediction['confidence']*100}%")
+    # Send POST request to the FastAPI backend
+    response = requests.post("http://your_render_backend_url/predict", json=data)
+
+    # Check if the response was successful
+    if response.status_code == 200:
+        prediction = response.json()
+
+        # Ensure that the response is well-structured
+        st.write("Prediction Response:", prediction)  # Inspect the response
+
+        # Accessing prediction and confidence
+        result = prediction.get('result', 'Unknown')
+        confidence = prediction.get('confidence', 0.0)
+
+        # Display results
+        st.write(f"Prediction: {result}")
+        st.write(f"Confidence: {confidence*100}%")
+    else:
+        st.write("Error occurred while fetching prediction.")

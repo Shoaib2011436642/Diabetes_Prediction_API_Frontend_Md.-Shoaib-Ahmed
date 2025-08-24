@@ -4,6 +4,36 @@ import requests
 # Streamlit page configuration
 st.set_page_config(page_title="Diabetes Prediction", page_icon="⚕️")
 
+# Your online image URL
+BG_URL = "https://images.pexels.com/photos/6942015/pexels-photo-6942015.jpeg"
+
+# Inject CSS: gradient overlay + background image
+st.markdown(
+    f"""
+    <style>
+    /* Main page background */
+    [data-testid="stAppViewContainer"] {{
+        background: 
+            linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50)),  /* overlay */
+            url('{BG_URL}') no-repeat center center / cover fixed;
+    }}
+
+    /* Make header transparent so background shows through */
+    [data-testid="stHeader"] {{
+        background: rgba(0,0,0,0);
+    }}
+
+    /* Optional: match sidebar with the same image + overlay */
+    [data-testid="stSidebar"] > div:first-child {{
+        background: 
+            linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+            url('{BG_URL}') no-repeat center center / cover;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Title and description
 st.title("Diabetes Prediction App Using Random Forest Model")
 st.subheader("Authored By: Md. Shoaib Ahmed")

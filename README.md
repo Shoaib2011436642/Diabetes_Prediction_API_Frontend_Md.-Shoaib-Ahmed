@@ -6,7 +6,7 @@
 https://diabetes-prediction-api-frontend-md.onrender.com/docs
 
 ### **Live Frontend Link (Streamlit):**
-https://diabetespredictionapifrontendmd-shoaib-ahmed-dvufcjnpvjkgcampj.streamlit.app/
+https://diabetespredictionapifrontendmd-shoaib-ahmed-dqtj9yy42va3abybw.streamlit.app/
 
 ---
 

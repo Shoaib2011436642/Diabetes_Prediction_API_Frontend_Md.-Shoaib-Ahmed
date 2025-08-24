@@ -33,7 +33,7 @@ if st.button("Predict"):
     }
 
     # Send POST request to the FastAPI backend
-    response = requests.post("https://diabetes-prediction-api-frontend-md.onrender.com/predict", json=data)
+    response = requests.post("https://diabetes-prediction-api-frontend-md-59ys.onrender.com/predict", json=data)
 
     # Check if the response was successful
     if response.status_code == 200:

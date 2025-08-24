@@ -41,7 +41,7 @@ async def predict(patient: PatientData):
     prediction = int(prediction[0])
     confidence = float(confidence)
 
-    return {"prediction": prediction, "result": result, "confidence": round(confidence, 6)}
+    return {"prediction": prediction, "result": result, "confidence": round(confidence, 2)}
 
 # Metrics Endpoint
 @app.get("/metrics")

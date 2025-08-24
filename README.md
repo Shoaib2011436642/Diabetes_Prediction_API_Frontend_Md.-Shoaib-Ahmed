@@ -12,7 +12,7 @@ https://diabetespredictionapifrontendmd-shoaib-ahmed-dqtj9yy42va3abybw.streamlit
 
 ### **Project Overview**
 
-This project aims to develop a **Diabetes Prediction System** using machine learning models. The model is trained using the **Pima Indians Diabetes Dataset** with multiple classifiers such as **Logistic Regression**, **Random Forest**, **Support Vector Machine (SVM)**, and **K-Nearest Neighbors (KNN)**. The best-performing model, **Logistic Regression**, is deployed using **FastAPI** and containerized using **Docker**. The backend is hosted on **Render**, and the frontend is built using **Streamlit**.
+This project aims to develop a **Diabetes Prediction System** using machine learning models. The model is trained using the **Pima Indians Diabetes Dataset** with multiple classifiers such as **Logistic Regression**, **Random Forest**, **Support Vector Machine (SVM)**, and **K-Nearest Neighbors (KNN)**. The best-performing model, **Random Forest**, is deployed using **FastAPI** and containerized using **Docker**. The backend is hosted on **Render**, and the frontend is built using **Streamlit**.
 
 ---
 

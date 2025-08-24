@@ -5,7 +5,7 @@ import requests
 st.set_page_config(page_title="Diabetes Prediction", page_icon="⚕️")
 
 # Title and description
-st.title("Diabetes Prediction App Using Logistic Regression Model")
+st.title("Diabetes Prediction App Using Random Forest Model")
 st.subheader("Authored By: Md. Shoaib Ahmed")
 st.write("Enter the values below to predict whether a patient has diabetes or not.")
 

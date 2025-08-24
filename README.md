@@ -3,7 +3,7 @@
 ### By Md. Shoaib Ahmed
 
 ### **Live Render Link (Backend API):**  
-https://diabetes-prediction-api-frontend-md.onrender.com/docs
+https://diabetes-prediction-api-frontend-md-59ys.onrender.com/docs
 
 ### **Live Frontend Link (Streamlit):**
 https://diabetespredictionapifrontendmd-shoaib-ahmed-dqtj9yy42va3abybw.streamlit.app/
